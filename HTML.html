@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userProfileViewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <h1>USER PROFILE VIEWER</h1>
+        <input id="search" type="search" placeholder="Search by name or email…" aria-label="Search users" disabled>
+    </header>
+
+    <main class="layout">
+        <section id="Users" aria-label="User list">
+            <p class="hint">The list of available profile. Click any to view their details</p>
+            <div id="userList" role="list"></div>
+        </section>
+
+        <section aria-label="User details">
+            <p class="hint">The detail information about the clicked profile</p>
+            <div id="userDetails" aria-live="polite">
+                <div class="empty">Select a user to see their profile.</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="App.js"></script>
+</body>
+</html>
